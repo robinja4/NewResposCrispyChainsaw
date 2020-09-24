@@ -4,29 +4,38 @@ namespace GithubCrispyChainsaw
 {
     class Program
     {
-<<<<<<< HEAD
-        string answer
-        static void Main(string[] args)
-        { 
-           
+
+        static void Main()
+        {
+            string temp;
+            int total = 0, correct = 25, answer;
+
             Console.WriteLine("Welcome to the Question Game");
 
             do
             {
                 Console.WriteLine("What is 5x5?");
-                answer = Console.ReadLine();
-                
+                temp = Console.ReadLine();
+                answer = Convert.ToInt32(temp);
 
-            } while (answers < 3);
-=======
+                if (answer!=correct)
+                {
+                    Console.WriteLine("You are wrong!");
+                }
+
+                total += 1;
+
+                Question2();
+                Question3();
+
+            } while (total < 3);
        
         static void Question2()
         {
             Random rand = new Random();
-            string temp;
-            int input
-            Console.WriteLine("Hello World!");
->>>>>>> 84ffed6d96ef1cdbfa20bae1880c99a7a4c598f1
+            
+            Console.WriteLine(rand);
+
         }
 
         static void Question3()
@@ -34,6 +43,7 @@ namespace GithubCrispyChainsaw
             string temp;
             Console.WriteLine("What is the original name for Myanmar?");
             temp = Console.ReadLine();
+    
 
 
             
