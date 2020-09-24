@@ -4,6 +4,7 @@ namespace GithubCrispyChainsaw
 {
     class Program
     {
+<<<<<<< HEAD
         string answer
         static void Main(string[] args)
         { 
@@ -17,6 +18,25 @@ namespace GithubCrispyChainsaw
                 
 
             } while (answers < 3);
+=======
+       
+        static void Question2()
+        {
+            Random rand = new Random();
+            string temp;
+            int input
+            Console.WriteLine("Hello World!");
+>>>>>>> 84ffed6d96ef1cdbfa20bae1880c99a7a4c598f1
+        }
+
+        static void Question3()
+        {
+            string temp;
+            Console.WriteLine("What is the original name for Myanmar?");
+            temp = Console.ReadLine();
+
+
+            
         }
     }
 }
