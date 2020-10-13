@@ -6,11 +6,11 @@ namespace GithubCrispyChainsaw
     {
         private static int Score = 0, total = 0;
 
-        public static void Main()
+        public static void Main() //main
         {
 
 
-            Console.WriteLine("Welcome to the Question Game");
+            Console.WriteLine("Welcome to the Question Game"); //title
 
             do
             {
@@ -27,7 +27,7 @@ namespace GithubCrispyChainsaw
 
         }
 
-        public static void Question1()
+        public static void Question1() //actual question
         {
             string temp;
             Console.WriteLine("What is 5x5?");
@@ -45,7 +45,7 @@ namespace GithubCrispyChainsaw
             }
             total += 1;
         }
-        public static void Question2()
+        public static void Question2() //actual question
         {
             string temp;
             Console.WriteLine("What is the original name for the country of Myanmar?");
@@ -64,7 +64,7 @@ namespace GithubCrispyChainsaw
             total += 1;
         }
 
-        public static void Question3()
+        public static void Question3() //actual question
         {
             string temp;
             Console.WriteLine("What is the highest peak in New Zealand?");
@@ -83,7 +83,7 @@ namespace GithubCrispyChainsaw
             total += 1;
         }
 
-        public static void Question4()
+        public static void Question4() //for a laugh
         {
             string emotion;
 
