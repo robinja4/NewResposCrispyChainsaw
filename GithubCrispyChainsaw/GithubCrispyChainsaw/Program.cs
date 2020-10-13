@@ -72,5 +72,16 @@ namespace GithubCrispyChainsaw
             }
             total += 1;
         }
+
+        public static void Question4()
+        {
+            string emotion;
+
+            Console.WriteLine("How are you feeling?");
+            emotion = Console.ReadLine();
+
+            Console.WriteLine($"I do not care that you are feeling {emotion}");
+            Console.ReadLine();
+        }
     }
 }
