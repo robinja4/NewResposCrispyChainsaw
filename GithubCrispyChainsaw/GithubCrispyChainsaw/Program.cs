@@ -4,11 +4,12 @@ namespace GithubCrispyChainsaw
 {
     class Program
     {
+        private static int Score = 0, total = 0;
 
-        static void Main()
+        public static void Main()
         {
             string temp;
-            int total = 0, correct = 25, answer;
+            int correct = 25, answer;
 
             Console.WriteLine("Welcome to the Question Game");
 
@@ -18,9 +19,10 @@ namespace GithubCrispyChainsaw
                 temp = Console.ReadLine();
                 answer = Convert.ToInt32(temp);
 
-                if (answer!=correct)
+                if (answer != correct)
                 {
                     Console.WriteLine("You are wrong!");
+
                 }
 
                 total += 1;
@@ -29,24 +31,46 @@ namespace GithubCrispyChainsaw
                 Question3();
 
             } while (total < 3);
-       
-        static void Question2()
-        {
-            Random rand = new Random();
-            
-            Console.WriteLine(rand);
+
 
         }
 
-        static void Question3()
+        public static void Question2()
         {
             string temp;
-            Console.WriteLine("What is the original name for Myanmar?");
+            Console.WriteLine("What is the original name for the country of Myanmar?");
             temp = Console.ReadLine();
-    
 
+            if (temp == "Burma" || temp == "burma")
+            {
+                Console.WriteLine("You are correct!");
+                Console.ReadLine();
+                Score = Score + 1;
+            }
+            else
+            {
+                Console.WriteLine("Sorry you are incorrect.");
+            }
+            total += 1;
+        }
 
-            
+        public static void Question3()
+        {
+            string temp;
+            Console.WriteLine("What is the highest peak in New Zealand?");
+            temp = Console.ReadLine();
+
+            if (temp == "Mount Cook" || temp == "Mt Cook" || temp == "mount cook" || temp == "Mt cook" || temp == "mt cook")
+            {
+                Console.WriteLine("You are correct!");
+                Console.ReadLine();
+                Score = Score + 1;
+            }
+            else
+            {
+                Console.WriteLine("Sorry you are incorrect.");
+            }
+            total += 1;
         }
     }
 }
