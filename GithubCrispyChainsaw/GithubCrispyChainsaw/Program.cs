@@ -19,9 +19,9 @@ namespace GithubCrispyChainsaw
                 Question3();
                 Question4();
 
-            } while (total < 5);
+            } while (total < 3);
 
-            Console.WriteLine($"{Score}");
+            Console.WriteLine($"Your score was {Score} out of 3");
             Console.ReadLine();
 
 
@@ -93,8 +93,5 @@ namespace GithubCrispyChainsaw
             Console.WriteLine($"I do not care that you are feeling {emotion}");
             Console.ReadLine();
         }
-
-
-
     }
 }
