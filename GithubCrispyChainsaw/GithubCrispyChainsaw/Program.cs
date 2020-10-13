@@ -8,33 +8,43 @@ namespace GithubCrispyChainsaw
 
         public static void Main()
         {
-            string temp;
-            int correct = 25, answer;
+
 
             Console.WriteLine("Welcome to the Question Game");
 
             do
             {
-                Console.WriteLine("What is 5x5?");
-                temp = Console.ReadLine();
-                answer = Convert.ToInt32(temp);
-
-                if (answer != correct)
-                {
-                    Console.WriteLine("You are wrong!");
-
-                }
-
-                total += 1;
-
+                Question1();
                 Question2();
                 Question3();
+                Question4();
 
-            } while (total < 3);
+            } while (total < 5);
+
+            Console.WriteLine($"{Score}");
+            Console.ReadLine();
 
 
         }
 
+        public static void Question1()
+        {
+            string temp;
+            Console.WriteLine("What is 5x5?");
+            temp = Console.ReadLine();
+
+            if (temp == "25")
+            {
+                Console.WriteLine("You are correct!");
+                Console.ReadLine();
+                Score = Score + 1;
+            }
+            else
+            {
+                Console.WriteLine("Sorry you are incorrect.");
+            }
+            total += 1;
+        }
         public static void Question2()
         {
             string temp;
@@ -83,5 +93,8 @@ namespace GithubCrispyChainsaw
             Console.WriteLine($"I do not care that you are feeling {emotion}");
             Console.ReadLine();
         }
+
+
+
     }
 }
